@@ -1,0 +1,132 @@
+:root {
+    --dark-color: #1D2F30;
+    --white-color: #fff;
+    --hover-color: #BAE249;
+    --focus-color: #83A440;
+    --active-color: #688B05;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.header {
+    background-color: var(--dark-color);
+    padding: 17px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 64px;
+}
+
+.header__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white-color);
+    transition: color .3s ease-in-out;
+}
+
+.header__link:hover {
+    color: var(--hover-color);
+}
+
+.header__link:focus {
+    outline: 1px solid var(--focus-color);
+    outline-offset: 3px 7px;
+}
+
+.header__link:active {
+    color: var(--active-color);
+}
+
+.header__btns {
+    display: flex;
+    gap: 64px;
+}
+
+.header__btn:hover svg path {
+    stroke: #91AC46;
+    transition: stroke 0.3s ease-in-out;
+}
+
+.header__btn:focus svg {
+    outline: 1px solid #83A440;
+    outline-offset: 3px 5px;
+}
+
+/* Hero */
+.hero-section {
+    padding: 115px 0;
+    background-image: url("../img/hero/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__title {
+    font-family: "Cormorant", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    width: 100%;
+    max-width: 688px;
+    color: var(--white-color);
+}
+
+.hero__text {
+    padding: 24px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    max-width: 635px;
+    color: var(--white-color);
+}
+
+.hero__link {
+    color: #BAE249;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color .3s ease-in-out;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero__link:hover {
+    color: #91AC46;
+}
+
+.hero__link svg path {
+    transition: fill .3s ease-in-out;
+}
+
+.hero__link:hover svg path {
+    fill: #91AC46;
+}
+
+.hero__link:focus {
+    outline: 1px solid #83A440;
+    outline-offset: 5px;
+}
+
+.hero__link:active {
+    color: #688B05;
+}
+
+.hero__link:active svg path {
+    fill: #688B05;
+}

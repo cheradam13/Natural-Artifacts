@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    
+    /* Header */
+    .header__inner {
+        flex-wrap: wrap;
+    }
+
+    .header__nav {
+        padding-top: 20px;
+        order: 3;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .header__nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero__title {
+        font-size: 52px;
+    }
+
+    .hero__text {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero__title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .hero__text {
+        display: none;
+    }
+}

@@ -130,3 +130,78 @@ body {
 .hero__link:active svg path {
     fill: #688B05;
 }
+
+/* Elements */
+.elements-section {
+    padding: 60px 0;
+    background-color: #1D2F30;
+}
+
+.elements__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.elements__item {
+    flex-basis: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.elements__top {
+    padding: 30px 16px;
+    background-color: #0B1919;  
+}
+
+.elements__bottom {
+    border: 1px solid #0B1919;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.elements__title {
+    font-family: "Cormorant", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--white-color);
+}
+
+.elements__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #899D9D;
+    padding-top: 8px;
+    padding-bottom: 16px;   
+}
+
+.elements__btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: #BAE249;
+    padding: 11px 29px;
+    border: 1px solid #BAE249;
+    transition: color, background-color .3s ease-in-out;
+    margin-top: auto;
+    width: fit-content;
+}
+
+.elements__btn:hover {
+    background-color: #BAE249;
+    color: #0B1919;
+}
+
+.elements__btn:focus {
+    outline: 1px solid #83A440;
+    outline-offset: 3px;
+}
+
+.elements__btn:active {
+    background-color: #688B05;
+    color: #0B1919;
+}

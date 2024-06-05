@@ -1,3 +1,24 @@
+@media (max-width: 1200px) {
+    .artifacts__wrap {
+        flex-direction: column;
+    }
+
+    .artifacts__img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .artifacts__title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .artifacts__text {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}
+
 @media (max-width: 768px) {
     
     /* Header */
@@ -28,15 +49,49 @@
     .hero__text {
         max-width: 550px;
     }
+
+    /* Help */
+    .help__text {
+        max-width: 675px;
+    }
 }
 
 @media (max-width: 520px) {
+    .section__title {
+        font-size: 46px;
+    }
+    
     .hero__title {
         font-size: 48px;
         margin-bottom: 30px;
+        line-height: 48px;
     }
 
     .hero__text {
+        display: none;
+    }
+
+    /* Artifacts */
+    .artifacts__title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .artifacts__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* Help */
+    .section__title {
+        font-size: 41px;
+    }
+
+    .help__heading {
+        margin-bottom: 20px;
+    }
+
+    .help__text {
         display: none;
     }
 }

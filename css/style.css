@@ -302,3 +302,121 @@ body {
 .artifacts__link:active svg path {
     fill: #0B1919;
 }
+
+/* Help */
+.help-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/help/bg.jpg");
+}
+
+.help__heading {
+    margin-bottom: 16px;
+}
+
+.help__text {
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white-color);
+    width: 100%;
+    max-width: 825px;
+}
+
+.help__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.help__inp {
+    background-color: var(--white-color);
+    padding: 11px 16px;
+    color: #899D9D;
+    width: 100%;
+    max-width: 350px;
+    transition: color, background-color .3s ease-in-out;
+}
+
+.help__inp:focus {
+    outline: 1px solid #83A440;
+    outline-offset: 5px;
+}
+
+.help__inp:hover {
+    background-color: #899D9D;
+}
+
+.help__inp:active {
+    background-color: #899D9D;
+}
+
+.help__btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #0B1919;
+    background-color: var(--hover-color);
+    padding: 12px 26px;
+    width: fit-content;
+    transition: background-color .3s ease-in-out;
+}
+
+.help__btn:focus {
+    outline: 1px solid #83A440;
+    outline-offset: 5px;
+}
+
+.help__btn:hover {
+    background-color: #91AC46;
+}
+
+.help__btn:active {
+    background-color: #688B05;
+}
+
+/* Footer */
+.footer__top {
+    padding: 18px 0;
+    background-color: #0B1919;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__bottom {
+    padding: 5px 0;
+    background-color: #1D2F30;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__social svg path {
+    cursor: pointer;
+    transition: fill .3s ease-in-out;
+}
+
+.footer__social:hover svg path {
+    fill: var(--hover-color);
+}
+
+.footer__social:focus svg {
+    outline: 1px solid var(--hover-color);
+    outline-offset: 5px;
+}
+
+.footer__social:active svg path {
+    fill: #83A440;
+}
+
+.footer__copyright {
+    color: #899D9D;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+}
